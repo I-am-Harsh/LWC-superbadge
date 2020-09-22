@@ -1,7 +1,8 @@
 import { LightningElement, track, wire } from "lwc";
+import { NavigationMixin } from 'lightning/navigation';
 import getBoatTypes from '@salesforce/apex/BoatDataService.getBoatTypes';
 
-export default class BoatSearchForm extends LightningElement {
+export default class BoatSearchForm extends NavigationMixin(LightningElement) {
   selectedBoatTypeId = "";
 
   // Private
