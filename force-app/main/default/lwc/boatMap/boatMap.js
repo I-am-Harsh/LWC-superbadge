@@ -52,7 +52,6 @@ export default class BoatMap extends LightningElement {
         }
     }
 
-    // must write this function as well
     subscribeMC() {
         if (!this.subscription) {
             this.subscription = subscribe(
